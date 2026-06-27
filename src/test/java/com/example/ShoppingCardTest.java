@@ -10,5 +10,14 @@ class ShoppingCartTest {
         ShoppingCart cart = new ShoppingCart();
         assertEquals(0, cart.total());
     }
+
+    @Test
+    void test_single_item_adds_to_total() {
+    ShoppingCart cart = new ShoppingCart();
+    cart.addItem(10);
+    assertEquals(10, cart.total());
+    }
+   
 }
+
 
